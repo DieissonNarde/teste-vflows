@@ -1,10 +1,10 @@
 import { Button } from './Button';
 
 interface GroupButtonsProps {
-  firstText: string;
-  secondText: string;
-  firstColor: string;
-  secondColor: string;
+  firstText?: string;
+  secondText?: string;
+  firstColor?: string;
+  secondColor?: string;
 }
 
 export function GroupButtons({
