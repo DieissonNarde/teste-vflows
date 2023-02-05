@@ -2,21 +2,22 @@ interface InputProps {
   label: string;
   type: string;
   value: string;
+  width: string;
 }
 
-export function Input({ label, type, value }: InputProps) {
+export function Input({ label, type, value, width }: InputProps) {
   return (
-    <>
-      <label className="mb-2 text-xl font-semibold uppercase" htmlFor={label}>
+    <div className={`${width}`}>
+      <label className="text-xl font-semibold uppercase" htmlFor={label}>
         {label}
       </label>
       <input
-        className="border border-gray p-3 rounded-md font-bold"
+        className="mt-2 w-full border border-gray p-3 text-lg	rounded-md font-bold"
         type={type}
         name={label}
         id={label}
         value={value}
       />
-    </>
+    </div>
   );
 }
