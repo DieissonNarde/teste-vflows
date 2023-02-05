@@ -2,7 +2,7 @@ import { HiSearchCircle } from 'react-icons/hi';
 
 export function Table() {
   return (
-    <table className="mt-4 w-full">
+    <table className="w-full">
       <thead className="bg-gray">
         <tr>
           <th className="px-6 py-3 text-2xl font-bold text-center text-white tracking-wider">

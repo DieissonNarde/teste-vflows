@@ -1,8 +1,8 @@
 interface TextProps {
   text: string;
-  bold: boolean;
+  bold?: boolean;
 }
 
-export function Text({ text, bold }: TextProps) {
+export function Text({ text, bold = false }: TextProps) {
   return <span className={`text-2xl ${bold && 'font-bold'}`}>{text}</span>;
 }
