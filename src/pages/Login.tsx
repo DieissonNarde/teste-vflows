@@ -14,7 +14,7 @@ export function Login() {
       <div className="mx-24 border border-slate-200 p-6">
         <form className="flex flex-col">
           <Input label={'cnpj'} type={'text'} value={'cnpj'} />
-          <Button text={'Acessar'} bgColor="green" />
+          <Button text={'Acessar'} bgColor="bg-green" />
         </form>
       </div>
     </Layout>
