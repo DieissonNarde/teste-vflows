@@ -9,7 +9,7 @@ import { Text } from '../components/Text';
 
 export function Invoice() {
   return (
-    <Layout maxWidth={'w-3/5'}>
+    <Layout width={'w-3/5'}>
       <Header titlePage="Dados da Nota Fiscal" />
       <ContainerBorder>
         <div className="flex gap-28">

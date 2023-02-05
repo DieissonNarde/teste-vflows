@@ -6,7 +6,7 @@ import { Table } from '../components/Table';
 
 export function Contracts() {
   return (
-    <Layout>
+    <Layout width={'w-3/5'}>
       <Header titlePage="Contratos Vinculados" />
       <Table />
       <GroupButtons />
