@@ -27,7 +27,7 @@ export function Table({ contracts }: TableProps) {
 
       <tbody className="bg-gray-200 divide-y divide-white">
         {contracts.map((contract) => (
-          <tr key={contract.id}>
+          <tr key={contract.codigoDoContrato}>
             <td className="px-6 py-4 text-xl font-semibold text-gray-900 text-center whitespace-nowrap">
               <div className="flex gap-8">
                 <input
