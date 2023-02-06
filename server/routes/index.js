@@ -29,19 +29,19 @@ router.post('/login', async (req, res, next) => {
   }
 });
 
-router.get('/contracts', async (req, res, next) => {
+router.post('/contracts', async (req, res, next) => {
   try {
     const contractsData = JSON.parse(await readFile(global.fileContracts));
 
-    let { cnpj } = req.body;
+    let data = req.body;
 
     let contracts = contractsData
-      .filter((contract) => contract.cnpj.includes(cnpj))
+      .filter((contract) => contract.cnpj.includes(data.cnpj))
       .map((contract) => {
         return contract;
       });
 
-    if (cnpj) return res.json({ contracts });
+    if (data.cnpj) return res.json({ contracts });
 
     logger.info('GET /contracts');
   } catch (err) {
