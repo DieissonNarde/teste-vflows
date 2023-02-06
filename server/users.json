@@ -1,0 +1,52 @@
+[
+  {
+    "cnpj": "0.0.0.0/0-0",
+    "razaoSocial": "Empresa 0 Ltda.",
+    "nomeFantasia": "Empresa 0"
+  },
+  {
+    "cnpj": "1.1.1.1/1-1",
+    "razaoSocial": "Empresa 1 Ltda.",
+    "nomeFantasia": "Empresa 1"
+  },
+  {
+    "cnpj": "2.2.2.2/2-2",
+    "razaoSocial": "Empresa 2 Ltda.",
+    "nomeFantasia": "Empresa 2"
+  },
+  {
+    "cnpj": "3.3.3.3/3-3",
+    "razaoSocial": "Empresa 3 Ltda.",
+    "nomeFantasia": "Empresa 3"
+  },
+  {
+    "cnpj": "4.4.4.4/4-4",
+    "razaoSocial": "Empresa 4 Ltda.",
+    "nomeFantasia": "Empresa 4"
+  },
+  {
+    "cnpj": "5.5.5.5/5-5",
+    "razaoSocial": "Empresa 5 Ltda.",
+    "nomeFantasia": "Empresa 5"
+  },
+  {
+    "cnpj": "6.6.6.6/6-6",
+    "razaoSocial": "Empresa 6 Ltda.",
+    "nomeFantasia": "Empresa 6"
+  },
+  {
+    "cnpj": "7.7.7.7/7-7",
+    "razaoSocial": "Empresa 7 Ltda.",
+    "nomeFantasia": "Empresa 7"
+  },
+  {
+    "cnpj": "8.8.8.8/8-8",
+    "razaoSocial": "Empresa 8 Ltda.",
+    "nomeFantasia": "Empresa 8"
+  },
+  {
+    "cnpj": "9.9.9.9/9-9",
+    "razaoSocial": "Empresa 9 Ltda.",
+    "nomeFantasia": "Empresa 9"
+  }
+]

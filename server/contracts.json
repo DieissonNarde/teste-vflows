@@ -1,0 +1,122 @@
+[
+  {
+    "nomeDoContrato": "Contrato 0",
+    "codigoDoContrato": "C0",
+    "retencaoTecnica": "1%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 1",
+    "codigoDoContrato": "C1",
+    "retencaoTecnica": "2%",
+    "cnpj": "1.1.1.1/1-1"
+  },
+  {
+    "nomeDoContrato": "Contrato 2",
+    "codigoDoContrato": "C2",
+    "retencaoTecnica": "3%",
+    "cnpj": "2.2.2.2/2-2"
+  },
+  {
+    "nomeDoContrato": "Contrato 3",
+    "codigoDoContrato": "C3",
+    "retencaoTecnica": "4%",
+    "cnpj": "3.3.3.3/3-3"
+  },
+  {
+    "nomeDoContrato": "Contrato 4",
+    "codigoDoContrato": "C4",
+    "retencaoTecnica": "5%",
+    "cnpj": "4.4.4.4/4-4"
+  },
+  {
+    "nomeDoContrato": "Contrato 5",
+    "codigoDoContrato": "C5",
+    "retencaoTecnica": "6%",
+    "cnpj": "5.5.5.5/5-5"
+  },
+  {
+    "nomeDoContrato": "Contrato 6",
+    "codigoDoContrato": "C6",
+    "retencaoTecnica": "7%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 7",
+    "codigoDoContrato": "C7",
+    "retencaoTecnica": "8%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 8",
+    "codigoDoContrato": "C8",
+    "retencaoTecnica": "9%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 9",
+    "codigoDoContrato": "C9",
+    "retencaoTecnica": "10%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 10",
+    "codigoDoContrato": "C10",
+    "retencaoTecnica": "11%",
+    "cnpj": "10.10.10.10/10-10"
+  },
+  {
+    "nomeDoContrato": "Contrato 11",
+    "codigoDoContrato": "C11",
+    "retencaoTecnica": "12%",
+    "cnpj": "11.11.11.11/11-11"
+  },
+  {
+    "nomeDoContrato": "Contrato 12",
+    "codigoDoContrato": "C12",
+    "retencaoTecnica": "13%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 13",
+    "codigoDoContrato": "C13",
+    "retencaoTecnica": "14%",
+    "cnpj": "13.13.13.13/13-13"
+  },
+  {
+    "nomeDoContrato": "Contrato 14",
+    "codigoDoContrato": "C14",
+    "retencaoTecnica": "15%",
+    "cnpj": "0.0.0.0/0-0"
+  },
+  {
+    "nomeDoContrato": "Contrato 15",
+    "codigoDoContrato": "C15",
+    "retencaoTecnica": "16%",
+    "cnpj": "15.15.15.15/15-15"
+  },
+  {
+    "nomeDoContrato": "Contrato 16",
+    "codigoDoContrato": "C16",
+    "retencaoTecnica": "17%",
+    "cnpj": "16.16.16.16/16-16"
+  },
+  {
+    "nomeDoContrato": "Contrato 17",
+    "codigoDoContrato": "C17",
+    "retencaoTecnica": "18%",
+    "cnpj": "17.17.17.17/17-17"
+  },
+  {
+    "nomeDoContrato": "Contrato 18",
+    "codigoDoContrato": "C18",
+    "retencaoTecnica": "19%",
+    "cnpj": "18.18.18.18/18-18"
+  },
+  {
+    "nomeDoContrato": "Contrato 19",
+    "codigoDoContrato": "C19",
+    "retencaoTecnica": "20%",
+    "cnpj": "0.0.0.0/0-0"
+  }
+]
