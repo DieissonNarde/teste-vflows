@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import { Button } from '../components/Button';
 import { ContainerBorder } from '../components/ContainerBorder';
 import { Footer } from '../components/Footer';
@@ -6,11 +7,16 @@ import { Header } from '../components/Header';
 import { Input } from '../components/Input';
 import { Layout } from '../components/Layout';
 import { Text } from '../components/Text';
+import { AuthContext } from '../contexts/AuthContext';
 
 export function Invoice() {
+  const { user } = useContext(AuthContext);
+
+  async function sendData() {}
+
   return (
     <Layout width={'w-3/5'}>
-      <Header titlePage="Dados da Nota Fiscal" />
+      <Header user={user} titlePage="Dados da Nota Fiscal" />
       <ContainerBorder>
         <div className="flex gap-28">
           <div className="flex gap-4">
@@ -66,13 +72,13 @@ export function Invoice() {
         </div>
 
         <div className="mb-8 flex items-center gap-8">
-          <Button text={'Anexar Nota Fiscal'} bgColor={'bg-gray'} />
+          <Button type={'button'} text={'Anexar Nota Fiscal'} bgColor={'bg-gray'} />
           <div>
             <p>Arquivo pdf</p>
           </div>
         </div>
 
-        <GroupButtons />
+        <GroupButtons toLinkBack="/contracts" handleAction={sendData} />
       </ContainerBorder>
       <Footer />
     </Layout>
