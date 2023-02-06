@@ -24,6 +24,7 @@ export function Button({ text, bgColor, handleAction, type, toLink }: ButtonProp
           className={`${bgColor} py-4 px-28 mt-8 text-white text-xl font-semibold uppercase hover:brightness-110 cursor-pointer`}
           type={type}
           value={text}
+          onClick={handleAction}
         />
       )}
     </>

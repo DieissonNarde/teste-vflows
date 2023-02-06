@@ -5,6 +5,8 @@ interface GroupButtonsProps {
   secondText?: string;
   firstColor?: string;
   secondColor?: string;
+  toLinkBack: string;
+  handleAction: () => void;
 }
 
 export function GroupButtons({
@@ -12,11 +14,13 @@ export function GroupButtons({
   secondText = 'Próximo',
   firstColor = 'bg-yellow',
   secondColor = 'bg-blue',
+  toLinkBack,
+  handleAction,
 }: GroupButtonsProps) {
   return (
     <div className="w-full flex justify-end gap-6">
-      <Button toLink="/" type={'button'} text={firstText} bgColor={firstColor} />
-      <Button toLink="/invoice" type={'button'} text={secondText} bgColor={secondColor} />
+      <Button toLink={toLinkBack} type={'button'} text={firstText} bgColor={firstColor} />
+      <Button handleAction={handleAction} type={'button'} text={secondText} bgColor={secondColor} />
     </div>
   );
 }
