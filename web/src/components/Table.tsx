@@ -1,11 +1,22 @@
+import { useState } from 'react';
 import { HiSearchCircle } from 'react-icons/hi';
 import { IContracts } from '../@types/contracts';
 
 interface TableProps {
   contracts: Array<IContracts>;
+  selectedContract: Array<string>;
+  setSelectedContract: React.Dispatch<React.SetStateAction<Array<string>>>;
 }
 
-export function Table({ contracts }: TableProps) {
+export function Table({ contracts, selectedContract, setSelectedContract }: TableProps) {
+  function handleChange(codigoDoContrato: string) {
+    if (selectedContract.includes(codigoDoContrato)) {
+      setSelectedContract(selectedContract.filter((item) => item !== codigoDoContrato));
+    } else {
+      setSelectedContract([...selectedContract, codigoDoContrato]);
+    }
+  }
+
   return (
     <table className="w-full">
       <thead className="bg-gray">
@@ -35,6 +46,8 @@ export function Table({ contracts }: TableProps) {
                   className="bg-white p-4 appearance-none checked:bg-blue cursor-pointer"
                   name="select"
                   id="select"
+                  checked={selectedContract.includes(contract.codigoDoContrato)}
+                  onChange={() => handleChange(contract.codigoDoContrato)}
                 />
                 {contract.nomeDoContrato}
               </div>
