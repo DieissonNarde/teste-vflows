@@ -15,8 +15,8 @@ export function GroupButtons({
 }: GroupButtonsProps) {
   return (
     <div className="w-full flex justify-end gap-6">
-      <Button type={'button'} text={firstText} bgColor={firstColor} />
-      <Button type={'button'} text={secondText} bgColor={secondColor} />
+      <Button toLink="/" type={'button'} text={firstText} bgColor={firstColor} />
+      <Button toLink="/invoice" type={'button'} text={secondText} bgColor={secondColor} />
     </div>
   );
 }
