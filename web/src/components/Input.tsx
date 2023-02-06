@@ -1,11 +1,20 @@
+import { ChangeEvent } from 'react';
+
 interface InputProps {
   label: string;
   type: string;
-  value: string;
   width: string;
+  value: string;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function Input({ label, type, value, width }: InputProps) {
+export function Input({ label, type, width, value, setValue }: InputProps) {
+  async function handleChange(e: ChangeEvent<HTMLInputElement>) {
+    const value = e.target.value;
+
+    setValue(value);
+  }
+
   return (
     <div className={`${width}`}>
       <label className="text-xl font-semibold uppercase" htmlFor={label}>
@@ -17,6 +26,7 @@ export function Input({ label, type, value, width }: InputProps) {
         name={label}
         id={label}
         value={value}
+        onChange={handleChange}
       />
     </div>
   );
