@@ -18,8 +18,6 @@ export function Login() {
 
     const response = await api.post('/login', { cnpj });
 
-    console.log('Response: ', response);
-
     if (response.statusText == 'OK') {
       updateUser(response.data);
       updateAuth(true);
