@@ -1,19 +1,24 @@
-import { ChangeEvent } from 'react';
+import { useEffect, useRef } from 'react';
+import { useField } from '@unform/core';
 
 interface InputProps {
   label: string;
   type: string;
   width: string;
-  value: string;
-  setValue: React.Dispatch<React.SetStateAction<string>>;
+  name: string;
 }
 
-export function Input({ label, type, width, value, setValue }: InputProps) {
-  async function handleChange(e: ChangeEvent<HTMLInputElement>) {
-    const value = e.target.value;
+export function Input({ label, type, width, name }: InputProps) {
+  const inputRef = useRef(null);
+  const { fieldName, registerField, error } = useField(name);
 
-    setValue(value);
-  }
+  useEffect(() => {
+    registerField({
+      name: fieldName,
+      ref: inputRef.current,
+      path: 'value',
+    });
+  }, [fieldName, registerField]);
 
   return (
     <div className={`${width}`}>
@@ -22,11 +27,8 @@ export function Input({ label, type, width, value, setValue }: InputProps) {
       </label>
       <input
         className="mt-2 w-full border border-gray p-3 text-lg	rounded-md font-bold"
+        ref={inputRef}
         type={type}
-        name={label}
-        id={label}
-        value={value}
-        onChange={handleChange}
       />
     </div>
   );
