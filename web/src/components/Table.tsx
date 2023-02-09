@@ -1,9 +1,8 @@
-import { useState } from 'react';
 import { HiSearchCircle } from 'react-icons/hi';
-import { IContracts } from '../@types/contracts';
+import { IContract } from '../@types/contracts';
 
 interface TableProps {
-  contracts: Array<IContracts>;
+  contracts: Array<IContract>;
   selectedContract: Array<string>;
   setSelectedContract: React.Dispatch<React.SetStateAction<Array<string>>>;
 }
