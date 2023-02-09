@@ -1,4 +1,4 @@
-export interface IContracts {
+export interface IContract {
   nomeDoContrato: string;
   codigoDoContrato: string;
   retencaoTecnica: string;
